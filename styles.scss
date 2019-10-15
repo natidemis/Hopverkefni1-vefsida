@@ -20,6 +20,11 @@ html { /* stylelint-disable-line */
   font-size: 16px;
 }
 
+.header {
+  position: absolute;
+  right: 0px;
+}
+
 .header h1 {
   font-size: 60px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
