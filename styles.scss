@@ -61,6 +61,7 @@ header {
       
       .header__p--p  {
         @include headerP;
+        font-weight: bold;
         }
         
       }
@@ -110,9 +111,20 @@ header {
       font-weight: bold;
       font-size: $grunnstaerd * 1.325;
     }
+    &__merki{
+      display: flex;
+      justify-content: center;
+      grid-column: 1/5;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 12;
+    }
+    &__merki + p{
+      text-align: center;
+    }
     &__div{
       display: grid;
-      line-height: 1.5;
+      line-height: 2;
       a{
         @include headerA(white);
         &:hover{
