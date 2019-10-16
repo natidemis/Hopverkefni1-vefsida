@@ -1,5 +1,15 @@
 @import "scss/config";
-
+@mixin headerP(){
+  font-size: $grunnstaerd;
+  margin: 12px;
+}
+@mixin headerA(){
+  color: black;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
 * {
   padding: 0;
   margin: 0;
@@ -30,36 +40,55 @@ header {
 
 }
 .header{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 92% 8%;
   width: 100%;
   max-width: 1200px;
   &__menu{ //Allt tengt .header class
-  padding-bottom: 1%;
-    a {
-        color: black;
-        text-decoration: none;
-        transition-property: color;
-        transition-duration: 200ms;
-        transition-timing-function: ease-in-out;
-        &:hover {
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+      a {
+          @include headerA;
+      &:hover {
         color: white;
-          }
-        }
-    h1 {
-        font-size: $grunnstaerd * 3.75;
-        font-family: 'Oswald', sans-serif;
-        text-align: center;
-        }
-    p {
-      display: inline;
-      font-size: $grunnstaerd;
-      margin: 5px;
-      font-size: $grunnstaerd ;
-      }
     }
-  
+        }
+      h1 {
+          font-size: $grunnstaerd * 3.75;
+          font-family: 'Oswald', sans-serif;
+          text-align: center;
+        }
+      &__h1{
+        margin-left: 8%;
+      }
+      p  {
+        @include headerP;
+        }
+        &__c{
+          @include headerP;
+          @include headerA;
+          a:hover {
+            color: white;
+            }
+          margin: 0;
+          margin-bottom: 12px;
+        }
+      }
+      &__menu__p{
+        margin-left: 8%;
+        display: inline-flex;
+        justify-content: center;
+      }
+      &__menu__cart{
+        display: flex;
+        align-self:flex-end;
+      }
+      &__cart, .cart__img{
+        padding-bottom: 20px;
+      }
   }
+  
 
 .container {
   max-width: 1200px;
