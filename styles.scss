@@ -14,44 +14,57 @@
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-
   // TODO fleiri grunn stillingar
-  max-width: 1200px;
-  font-size: 16px;
+
+  font-size: $grunnstaerd;
+}
+p {
+  font-family: 'Open sans', sans-serif;
 }
 
 header {
   //Þarf að laga position og fleira með staðsetningu
   background-color: $redOrange;
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+
+}
+.header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  &__menu{ //Allt tengt .header class
+  padding-bottom: 1%;
+    a {
+        color: black;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
+        &:hover {
+        color: white;
+          }
+        }
+    h1 {
+        font-size: $grunnstaerd * 3.75;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        }
+    p {
+      display: inline;
+      font-size: $grunnstaerd;
+      margin: 5px;
+      font-size: $grunnstaerd ;
+      }
+    }
+  
+  }
+
+.container {
+  max-width: 1200px;
 }
 
-.header a {
-  color: black;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-}
-
-.header a:hover {
-  color: white;
-}
-
-.header h1 {
-  font-size: 60px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-right: 50px;
-  padding-right: 50px;
-}
-
-.header h2{
-  display: inline;
-  font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 
 // TODO sækja allar sass skrár
