@@ -3,8 +3,8 @@
   font-size: $grunnstaerd;
   margin: 12px;
 }
-@mixin headerA(){
-  color: black;
+@mixin headerA($color){
+  color: $color;
   text-decoration: none;
   transition-property: color;
   transition-duration: 200ms;
@@ -48,62 +48,89 @@ header {
     display: grid;
     grid-template-columns: 1fr;
       a {
-          @include headerA;
+          @include headerA(black);
       &:hover {
         color: white;
     }
         }
-      h1 {
+      .header__h1--h1 {
           font-size: $grunnstaerd * 3.75;
           font-family: 'Oswald', sans-serif;
           text-align: center;
         }
+      
+      .header__p--p  {
+        @include headerP;
+        }
+        
+      }
+      &__c{
+        @include headerP;
+        @include headerA(black);
+        margin: 0;
+        margin-bottom: 12px;
+      }
       &__h1{
         margin-left: 8%;
       }
-      p  {
-        @include headerP;
-        }
-        &__c{
-          @include headerP;
-          @include headerA;
-          margin: 0;
-          margin-bottom: 12px;
-        }
-      }
-      &__menu__p{
+      &__p{
         margin-left: 8%;
         display: inline-flex;
         justify-content: center;
       }
-      &__menu__cart{
+      &__cart{
         display: flex;
         align-self:flex-end;
         a:hover {
           color: white;
-        }
-      
+            }
+        
       }
       &__cart, .cart__img{
-        padding-bottom: 20px;
+        padding-bottom: 11px;
       }
   }
   //Fótur
   footer{
     background-color: $blue;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
   }
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    &__h4{
+      font-weight: bold;
+      font-size: $grunnstaerd * 1.325;
+    }
+    &__div{
+      display: grid;
+      line-height: 1.5;
+      a{
+        @include headerA(white);
+        &:hover{
+          color: black;
+        }
+      }
+    }
+  }
+
 
 .main {
   max-width: 1200px;
-  background-color: black;
+  height: 100%;
 }
 .container{
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 
