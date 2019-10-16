@@ -22,10 +22,10 @@ html { /* stylelint-disable-line */
 
 header {
   //Þarf að laga position og fleira með staðsetningu
-  background-color: #ff5000;
+  background-color: $redOrange;
   width: 100%;
-  position: relative;
-  padding-left: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header a {

@@ -7,7 +7,7 @@
     "test": "echo \"test\"",
     "sass": "node-sass styles.scss --source-map-embed styles.css",
     "browser-sync": "browser-sync start --server --files index.html styles.css pages/*.html",
-    "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css pages/*.html",
     "dev": "npm-run-all --parallel sass-watch browser-sync"
   },
   "repository": {
