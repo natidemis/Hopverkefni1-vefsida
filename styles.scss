@@ -31,9 +31,8 @@ html { /* stylelint-disable-line */
 p {
   font-family: 'Open sans', sans-serif;
 }
-
+//Hér er hausinn
 header {
-  //Þarf að laga position og fleira með staðsetningu
   background-color: $redOrange;
   display: flex;
   justify-content: center;
@@ -68,9 +67,6 @@ header {
         &__c{
           @include headerP;
           @include headerA;
-          a:hover {
-            color: white;
-            }
           margin: 0;
           margin-bottom: 12px;
         }
@@ -83,15 +79,32 @@ header {
       &__menu__cart{
         display: flex;
         align-self:flex-end;
+        a:hover {
+          color: white;
+        }
+      
       }
       &__cart, .cart__img{
         padding-bottom: 20px;
       }
   }
-  
+  //Fótur
+  footer{
+    background-color: $blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 
-.container {
+.main {
   max-width: 1200px;
+  background-color: black;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
