@@ -1,15 +1,5 @@
 @import "scss/config";
-@mixin headerP(){
-  font-size: $grunnstaerd;
-  margin: 12px;
-}
-@mixin headerA($color){
-  color: $color;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -40,7 +30,7 @@ header {
 }
 .header{
   display: grid;
-  grid-template-columns: 92% 8%;
+  grid-template-columns: 91% 9%;
   width: 100%;
   max-width: 1200px;
   &__menu{ //Allt tengt .header class
@@ -67,15 +57,14 @@ header {
       }
       &__c{
         @include headerP;
-        @include headerA(black);
-        
+        @include headerA(black);      
         font-weight: bold;
       }
       &__h1{
-        margin-left: 8%;
+        margin-left: 9%;
       }
       &__p{
-        margin-left: 8%;
+        margin-left: 9%;
         display: inline-flex;
         justify-content: center;
       }
@@ -85,7 +74,6 @@ header {
         a:hover {
           color: white;
             }
-        
       }
       &__cart, .cart__img{
         padding-bottom: 11px;
