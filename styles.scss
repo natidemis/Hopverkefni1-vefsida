@@ -77,7 +77,7 @@ header {
             }
       }
       &__cart, .cart__img{
-        padding-bottom: 11px;
+        padding-bottom: $gutter/2;
       }
   }
   //Fótur
@@ -104,8 +104,8 @@ header {
       display: flex;
       justify-content: center;
       grid-column: 1/5;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: $gutter;
+      padding-bottom: $gutter;
       font-size: 12;
     }
     &__merki + p{
@@ -117,7 +117,7 @@ header {
     }
     &__div{
       display: grid;
-      line-height: 2;
+      line-height: $gutter*2;
       a{
         @include headerA(white);
         &:hover{
@@ -126,7 +126,6 @@ header {
       }
     }
   }
-
 
 .main {
   max-width: 1200px;

@@ -67,7 +67,7 @@ header {
     .header__cart a:hover {
       color: white; }
   .header__cart, .header .cart__img {
-    padding-bottom: 11px; }
+    padding-bottom: 10px; }
 
 footer {
   background-color: #00b7ff;
@@ -101,7 +101,7 @@ footer {
     margin: 0px; }
   .footer__div {
     display: grid;
-    line-height: 2; }
+    line-height: 40px; }
     .footer__div a {
       color: white;
       text-decoration: none;
