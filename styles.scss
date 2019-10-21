@@ -60,6 +60,7 @@ header {
     }
     @media screen and (max-width: 699px) {
       @include headerP;
+      margin-bottom: -$gutter/2;
     }
     @media (min-width: 1000px) {
       @include headerP;
@@ -118,7 +119,7 @@ header {
           grid-column: none;
         }
       }
-      &__ps{
+      &__p--sf{
         @media screen and(min-width: 700px) {
           text-align: center;
           margin-top: 0px;
