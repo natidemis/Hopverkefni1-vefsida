@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prílihúsið-námskeið</title>
+    <title>Námskeið</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
@@ -12,7 +12,7 @@
     <header>
         <div class="header">
           <div class="header__menu">
-                <div class="header__h1"><h1 class="header__h1--h1">Prílihúsið</h1></div>
+                <div class="header__h1"><h1 class="header__h1--h1">Vöruhúsið</h1></div>
                 <div class="header__p">
                 <span><a href="../index.html"><p class="header__p--p">FORSÍÐA</p></a></span>
                 <span><a href="products.html"><p class="header__p--p">VÖRUR</p></a></span>
@@ -29,11 +29,71 @@
     <div class="container">
       <div class="main">
         <div class="text-img">
-
+          <h2>Námskeið</h2>
+          <br>
+          <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+          <div class="img">
+            <img src="../img/climbing-gym.jpg" alt="Klifurhús" width="50%" height="50%">
+          </div>
         </div>
         <div class="forms">
-          <div class="almennar-upplysingar"></div>
-          <div class="greidsla"></div>
+          <div class="almennar-upplysingar">
+            <h2>Almennar upplýsingar</h2>
+            <form>
+              Nafn:
+              <input type="text" name="name">
+              <br>
+              Heimilisfang:
+              <input type="text" name="address">
+              <br>
+              Aldur:
+              <input type="text" name="age">
+              <br>
+              Námskeið:
+              <select name="course">
+                <option value="V0 - V1">V0 - V1</option>
+                <option value="V2 - V4">V2 - V4</option>
+                <option value="V5 - V7">V5 - V7</option>
+                <option value="kid-course">Krakkanámskeið</option>
+                <option value="mountain-climb">Fjallaklifur</option>
+              </select>
+            </form>
+          </div>
+          <div class="greidsla">
+            <h2>Greiðsluupplýsingar</h2>
+            <form>
+              Kortanúmer:
+              <input type="text" name="card-num">
+              <br>
+              Korthafi:
+              <input type="text" name="cardholder">
+              <br>
+              Gildistími:
+              Mán 
+              <select name="month">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              Ár  
+              <select name="year">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
+            </form>
+          </div>
+          <button type="button" onclick="window.location.href = 'course.html'">Skrá</button>
         </div>
       </div>
     </div>
@@ -69,8 +129,8 @@
               <span><a href="course.html">Námskeið</a></span>
               <span><a href="cart.html">Karfa</a></span>
             </div>
-      <div class="footer__merki"><p>© 2018 Vöruhúsið</p></div>
-    </div>
+          </div>
+          <div class="footer__merki"><p>© 2018 Vöruhúsið</p></div>
     </footer>
 
   </body>

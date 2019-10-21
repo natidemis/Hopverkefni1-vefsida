@@ -174,8 +174,9 @@ header {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding-left: 0;
     }
-    &__h4{
+    &__fs{
       font-weight: bold;
+      font-family: 'Oswald', sans-serif;
       font-size: $grunnstaerd * 1.325;
       padding-bottom: $gutter/2;
     }
@@ -203,12 +204,17 @@ header {
     &__div{
       display: grid;
       padding-bottom: $gutter;
+
+      span {
+        padding-bottom: 5px;
+      }
       
       a{
         @include headerA($white);
         &:hover{
           color: $black;
         }
+        font-family: sans-serif;
       }
     }
     
