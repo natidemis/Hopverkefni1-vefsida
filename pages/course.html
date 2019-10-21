@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../course.css">
   </head>
   <body>
     <header>
@@ -28,17 +29,15 @@
     </header>
     <div class="container">
       <div class="main">
-        <div class="text-img">
-          <h2>Námskeið</h2>
-          <br>
+        <div class="main__text">
+          <h2 class="main--h2 main--nsh2">Námskeið</h2>
           <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
-          <div class="img">
-            <img src="../img/climbing-gym.jpg" alt="Klifurhús" width="50%" height="50%">
-          </div>
         </div>
-        <div class="forms">
-          <div class="almennar-upplysingar">
-            <h2>Almennar upplýsingar</h2>
+        <div class="main__imgdiv">
+          <img src="../img/climbing-gym.jpg" alt="Klifurhús" class="main__img">
+        </div>
+          <div class="main__almennt">
+            <h2 class="main--auh2">Almennar upplýsingar</h2>
             <form>
               Nafn:
               <input type="text" name="name">
@@ -59,8 +58,8 @@
               </select>
             </form>
           </div>
-          <div class="greidsla">
-            <h2>Greiðsluupplýsingar</h2>
+          <div class="main__greidsla">
+            <h2 class="main--guh2">Greiðsluupplýsingar</h2>
             <form>
               Kortanúmer:
               <input type="text" name="card-num">
@@ -93,8 +92,7 @@
               </select>
             </form>
           </div>
-          <button type="button" onclick="window.location.href = 'course.html'">Skrá</button>
-        </div>
+         <div class="main__btn"> <button type="button" onclick="window.location.href = 'course.html'">Skrá</button></div>
       </div>
     </div>
     <footer>
@@ -132,6 +130,6 @@
           </div>
           <div class="footer__merki"><p>© 2018 Vöruhúsið</p></div>
     </footer>
-
+  </div>
   </body>
 </html>

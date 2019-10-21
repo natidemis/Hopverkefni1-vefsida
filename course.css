@@ -1,0 +1,42 @@
+.main__img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*@media screen and (min-width: 800px) {
+          margin: 0px;
+          width: 100%;
+          height: 100%;
+        }*/ }
+  @media screen and (max-width: 799px) {
+    .main__img {
+      max-width: 100%;
+      max-height: 100%; } }
+
+.main h2 {
+  font-size: 36px;
+  font-family: 'Oswald', sans-serif; }
+
+.main--nsh2 {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.main p {
+  font-size: 24px;
+  margin-bottom: 40px; }
+
+.main__greidsla {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.main__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.main button {
+  margin-bottom: 20px; }
+
+.main--guh2 {
+  margin-bottom: 10px; }
+
+.main--auh2 {
+  margin-bottom: 10px; }
