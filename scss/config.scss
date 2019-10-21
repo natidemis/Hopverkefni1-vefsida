@@ -8,7 +8,7 @@ $gutter: 20px;
 
 @mixin headerP(){
     font-size: $grunnstaerd;
-    margin: 12px;
+    margin: $gutter/2;
   }
   @mixin headerA($color){
     color: $color;
