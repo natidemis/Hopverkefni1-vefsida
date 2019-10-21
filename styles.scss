@@ -27,78 +27,161 @@ header {
   background-color: $redOrange;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 699px) {
+    width: 100vw;
+  }
 
 }
-.header{
+.header{ //Allt tengt .header class
   display: grid;
-  grid-template-columns: 91% 9%;
   width: 100%;
   max-width: 1200px;
-  &__menu{ //Allt tengt .header class
-    padding-bottom: 1%;
+  @media screen and (max-width: 699px) { // utlit fyrr .header í < 700px
+    grid-template-columns:100%;
+    width: auto;
+  }
+  @media screen and (min-width: 700px){ //utlit fyrir .header fyrir <= 1000px
+    grid-template-columns: 84.5% 15.5%;
+  }
+  @media (min-width: 1000px) {
+    grid-template-columns: 91% 9%;
+  }
+  &__h1--h1 {
+    font-size: $grunnstaerd * 3.75;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+  }
+
+  &__p--p  {
+  font-weight: bold;
+  @media screen and (min-width: 700px) {
+    @include headerP;
+      margin-bottom: 0px;
+    }
+    @media screen and (max-width: 699px) {
+      @include headerP;
+    }
+    @media (min-width: 1000px) {
+      @include headerP;
+    }
+  }
+   
+  &__menu{ // header__menu class í html
+    padding-bottom: $gutter;
     display: grid;
     grid-template-columns: 1fr;
       a {
-          @include headerA(black);
+          @include headerA($black);
       &:hover {
-        color: white;
-    }
-        }
-      .header__h1--h1 {
-          font-size: $grunnstaerd * 3.75;
-          font-family: 'Oswald', sans-serif;
-          text-align: center;
-        }
-      
-      .header__p--p  {
-        @include headerP;
-        font-weight: bold;
-        }
-        
+        color: $white;
       }
+      }
+    }
       &__c{
         @include headerP;
-        @include headerA(black);      
+        @include headerA($black);      
         font-weight: bold;
       }
       &__h1{
-        margin-left: 9%;
+        @media (min-width: 1000px) {
+          margin-left: 9%;
+        }
+        @media screen and (max-width:699px){
+          margin-left: 0%;
+        }
+        @media screen and (min-width:700px){
+          margin-left: 15.5%;
+        }
       }
       &__p{
-        margin-left: 9%;
-        display: inline-flex;
+        display: flex;
         justify-content: center;
+        @media screen and (max-width:699px){
+          margin-left: 0%;
+        }
+        @media screen and (min-width:700px){
+          margin-left: 15.5%;
+          display: grid;
+          grid-template-columns: min-content min-content min-content;
+        }
+        @media (min-width: 1000px) {
+          margin-left: 9%;
+          display: flex;
+          grid-template-columns: none;
+        }
+      }
+      &__lastspan{
+        @media screen and (min-width: 700px) {
+          grid-column: 1/4;
+        }
+        @media (min-width: 1000px) {
+          grid-column: none;
+        }
+      }
+      &__ps{
+        @media screen and(min-width: 700px) {
+          text-align: center;
+          margin-top: 0px;
+        }
+        @media (min-width: 1000px) {
+          text-align: left;
+          margin-top: $gutter/2;
+        }
       }
       &__cart{
         display: flex;
         align-self:flex-end;
+        padding-bottom: $gutter;
         a:hover {
-          color: white;
+          color: $white;
             }
+        @media screen and (max-width:699px){
+          text-align: center;
+          justify-content: center;
+        }
+        
       }
-      &__cart, .cart__img{
+      .cart__img{
         padding-bottom: $gutter/2;
       }
   }
+
   //Fótur
   footer{
     background-color: $blue;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    
+    width: 100vw;
     display: flex;
     justify-content: center;
     height: auto;
   }
   .footer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     max-width: 1200px;
+    padding-top: $gutter;
+    padding-bottom: $gutter*3;
     justify-content: center;
+    @media screen and(max-width:699px) {
+      grid-template-columns: 1fr 1fr;
+      padding-left: $gutter;
+    }
+    @media screen and(min-width:700px) {
+      grid-template-columns: 1fr 1fr;
+      padding-left: $gutter;
+    }
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-left: 0;
+    }
     &__h4{
       font-weight: bold;
       font-size: $grunnstaerd * 1.325;
+      padding-bottom: $gutter/2;
+    }
+    &__section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
     &__merki{
       display: flex;
@@ -106,25 +189,29 @@ header {
       grid-column: 1/5;
       padding-top: $gutter;
       padding-bottom: $gutter;
-      font-size: 12;
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
     }
     &__merki + p{
       text-align: center;
     }
     &__div + p{
-      background-color: red;
       margin: 0px;
     }
+    
     &__div{
       display: grid;
-      line-height: $gutter*2;
+      padding-bottom: $gutter;
+      
       a{
-        @include headerA(white);
+        @include headerA($white);
         &:hover{
-          color: black;
+          color: $black;
         }
       }
     }
+    
   }
 
 .main {

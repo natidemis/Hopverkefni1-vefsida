@@ -1,6 +1,6 @@
 // TODO stillingar hér
 $black: #000000;
-$orange: #fffcf2;
+$white: #fffcf2;
 $redOrange: #ff5000;
 $blue: #00b7ff;
 $grunnstaerd: 16px;
@@ -8,7 +8,7 @@ $gutter: 20px;
 
 @mixin headerP(){
     font-size: $grunnstaerd;
-    margin: 12px;
+    margin: $gutter/2;
   }
   @mixin headerA($color){
     color: $color;
@@ -17,3 +17,4 @@ $gutter: 20px;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
   }
+  
