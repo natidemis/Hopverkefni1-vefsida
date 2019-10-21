@@ -16,7 +16,7 @@ html { /* stylelint-disable-line */
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
 
-  font-size: $grunnstaerd;
+  
 }
 
 p {
@@ -218,11 +218,12 @@ header {
 .main {
   max-width: 1200px;
   height: 100%;
+  width: 100%;
 }
 .container{
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
