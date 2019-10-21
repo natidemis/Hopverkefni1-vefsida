@@ -18,3 +18,9 @@ $gutter: 20px;
     transition-timing-function: ease-in-out;
   }
   
+  @mixin uppermain($order) {
+    @media screen and (min-width: 800px) {
+      order: $order;
+      padding-top: $gutter*2;
+    }
+  }
