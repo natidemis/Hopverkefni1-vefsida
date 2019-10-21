@@ -1,14 +1,5 @@
 @import "scss/config";
 
-.container{
-  @media screen and (max-width: 799px) {
-    height: 100vh;
-  }
-    @media screen and (max-width: 1000px) {
-      height: 100%;
-    }
-  }
-
 .main{
   @media screen and (min-width: 800px) {
     display: grid;
