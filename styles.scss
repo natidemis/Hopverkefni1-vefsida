@@ -15,8 +15,9 @@ html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
   // TODO fleiri grunn stillingar
-
-  font-size: $grunnstaerd;
+  position: relative;
+  min-height: 100%;
+  
 }
 
 p {
@@ -204,7 +205,6 @@ header {
     width: 100vw;
     display: flex;
     justify-content: center;
-    height: auto;
   }
   .footer{
     display: grid;
@@ -225,9 +225,8 @@ header {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding-left: 0;
     }
-    &__fs{
+    &__h4{
       font-weight: bold;
-      font-family: 'Oswald', sans-serif;
       font-size: $grunnstaerd * 1.325;
       padding-bottom: $gutter/2;
     }
@@ -255,17 +254,12 @@ header {
     &__div{
       display: grid;
       padding-bottom: $gutter;
-
-      span {
-        padding-bottom: 5px;
-      }
       
       a{
         @include headerA($white);
         &:hover{
           color: $black;
         }
-        font-family: sans-serif;
       }
     }
     
@@ -273,12 +267,15 @@ header {
 
 .main {
   max-width: 1200px;
-  height: 100%;
+  padding-right: $gutter;
+  padding-left: $gutter;
+  height: auto;
+  width: 100%;
 }
 .container{
-  height: 100vh;
+  height: auto;
   width: 100%;
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
