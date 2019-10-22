@@ -18,7 +18,7 @@
                 <span><a href="../index.html"><p class="header__p--p">FORSÍÐA</p></a></span>
                 <span><a href="products.html"><p class="header__p--p">VÖRUR</p></a></span>
                 <span><a href="course.html"><p class="header__p--p"><u>NÁMSKEIÐ</u></p></a></span>
-                <span class="header__lastspan"><a href="staff.html"><p class="header__p--p header__ps">STARFSFÓLK</p></a></span>
+                <span class="header__lastspan"><a href="staff.html"><p class="header__p--p header__p--sf">STARFSFÓLK</p></a></span>
                 </div>
            </div>
            <div class="header__cart">
@@ -39,35 +39,35 @@
           <div class="main__almennt">
             <h2 class="main--auh2">Almennar upplýsingar</h2>
             <form>
-              Nafn:
-              <input type="text" name="name">
-              <br>
-              Heimilisfang:
-              <input type="text" name="address">
-              <br>
-              Aldur:
-              <input type="text" name="age">
-              <br>
-              Námskeið:
+              <div class="main__rc"> Nafn:
+              <input type="text" name="name" class="main__input">
+              <br></div>
+              <div class="main__rc"> Heimilisfang:
+              <input type="text" name="address" class="main__input">
+              <br></div>
+              <div class="main__rc">Aldur:
+              <input type="text" name="age" class="main__input">
+              <br></div>
+              <div class="main__rc">Námskeið:
               <select name="course">
                 <option value="V0 - V1">V0 - V1</option>
                 <option value="V2 - V4">V2 - V4</option>
                 <option value="V5 - V7">V5 - V7</option>
                 <option value="kid-course">Krakkanámskeið</option>
                 <option value="mountain-climb">Fjallaklifur</option>
-              </select>
+              </select></div>
             </form>
           </div>
           <div class="main__greidsla">
-            <h2 class="main--guh2">Greiðsluupplýsingar</h2>
+            <div><h2 class="main--guh2">Greiðsluupplýsingar</h2></div>
             <form>
-              Kortanúmer:
-              <input type="text" name="card-num">
-              <br>
-              Korthafi:
-              <input type="text" name="cardholder">
-              <br>
-              Gildistími:
+              <div class="main__rc">Kortanúmer:
+              <input type="text" name="card-num" class="main__input">
+              <br></div>
+             <div class="main__rc"> Korthafi:
+              <input type="text" name="cardholder" class="main__input">
+              <br></div>
+              <div class="main__rc">Gildistími:
               Mán 
               <select name="month">
                 <option value="01">01</option>
@@ -89,7 +89,7 @@
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
-              </select>
+              </select></div>
             </form>
           </div>
          <div class="main__btn"> <button type="button" onclick="window.location.href = 'course.html'">Skrá</button></div>

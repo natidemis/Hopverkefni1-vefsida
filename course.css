@@ -1,15 +1,15 @@
+@media screen and (min-width: 800px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px; } }
+
 .main__img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /*@media screen and (min-width: 800px) {
-          margin: 0px;
-          width: 100%;
-          height: 100%;
-        }*/ }
-  @media screen and (max-width: 799px) {
+  width: 100%; }
+  @media screen and (min-width: 800px) {
     .main__img {
-      max-width: 100%;
-      max-height: 100%; } }
+      margin-top: 60px; } }
 
 .main h2 {
   font-size: 36px;
@@ -22,10 +22,18 @@
 .main p {
   font-size: 24px;
   margin-bottom: 40px; }
+  @media screen and (min-width: 800px) {
+    .main p {
+      margin-bottom: 0px; } }
 
-.main__greidsla {
+.main__greidsla, .main__almennt {
   margin-top: 20px;
   margin-bottom: 20px; }
+  @media screen and (min-width: 800px) {
+    .main__greidsla, .main__almennt {
+      margin-bottom: 0px;
+      display: grid;
+      grid-template-columns: 1fr; } }
 
 .main__btn {
   width: 100%;
@@ -35,8 +43,21 @@
 .main button {
   margin-bottom: 20px; }
 
+@media screen and (min-width: 800px) {
+  .main__btn {
+    grid-column: 1/3; } }
+
 .main--guh2 {
   margin-bottom: 10px; }
+  @media screen and (min-width: 800px) {
+    .main--guh2 {
+      margin-bottom: 20px; } }
 
 .main--auh2 {
   margin-bottom: 10px; }
+  @media screen and (min-width: 800px) {
+    .main--auh2 {
+      margin-bottom: 20px; } }
+
+.main__rc {
+  margin-bottom: 20px; }
