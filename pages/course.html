@@ -39,17 +39,17 @@
           <div class="main__almennt">
             <h2 class="main--auh2">Almennar upplýsingar</h2>
             <form>
-              <div class="main__rc"> Nafn:
+              <div class="main__rc"> <label for="name">Nafn:</label>
               <input type="text" name="name" class="main__input">
-              <br></div>
-              <div class="main__rc"> Heimilisfang:
+              </div>
+              <div class="main__rc"> <label for="address">Heimilisfang:</label>
               <input type="text" name="address" class="main__input">
-              <br></div>
-              <div class="main__rc">Aldur:
+              </div>
+              <div class="main__rc"><label for="age">Aldur:</label>
               <input type="text" name="age" class="main__input">
-              <br></div>
+              </div>
               <div class="main__rc">Námskeið:
-              <select name="course">
+              <select name="course" class="main__course">
                 <option value="V0 - V1">V0 - V1</option>
                 <option value="V2 - V4">V2 - V4</option>
                 <option value="V5 - V7">V5 - V7</option>
@@ -61,15 +61,15 @@
           <div class="main__greidsla">
             <div><h2 class="main--guh2">Greiðsluupplýsingar</h2></div>
             <form>
-              <div class="main__rc">Kortanúmer:
+              <div class="main__rc"><label for="card-num">Kortanúmer:</label>
               <input type="text" name="card-num" class="main__input">
-              <br></div>
-             <div class="main__rc"> Korthafi:
+              </div>
+             <div class="main__rc"> <label for="cardholder">Korthafi:</label>
               <input type="text" name="cardholder" class="main__input">
-              <br></div>
+              </div>
               <div class="main__rc">Gildistími:
-              Mán 
-              <select name="month">
+              <label for="month">Mán</label> 
+              <select name="month" class="main__month">
                 <option value="01">01</option>
                 <option value="02">02</option>
                 <option value="03">03</option>
@@ -83,8 +83,8 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              Ár  
-              <select name="year">
+              <label for="year">Ár</label>  
+              <select name="year" class="main__year">
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>

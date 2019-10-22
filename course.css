@@ -1,3 +1,6 @@
+html {
+  font-size: 21px; }
+
 @media screen and (min-width: 800px) {
   .main {
     display: grid;
@@ -28,7 +31,10 @@
 
 .main__greidsla, .main__almennt {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between; }
   @media screen and (min-width: 800px) {
     .main__greidsla, .main__almennt {
       margin-bottom: 0px;
@@ -60,4 +66,70 @@
       margin-bottom: 20px; } }
 
 .main__rc {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.main__input {
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 300px; }
+  @media screen and (min-width: 800px) {
+    .main__input {
+      height: 40px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      width: 220px;
+      margin-right: 40px; } }
+  @media screen and (min-width: 1000px) {
+    .main__input {
+      height: 40px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      width: 340px;
+      margin-right: 100px; } }
+
+.main__course {
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 300px; }
+  @media screen and (min-width: 800px) {
+    .main__course {
+      height: 40px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      width: 180px;
+      margin-right: 40px; } }
+  @media screen and (min-width: 1000px) {
+    .main__course {
+      height: 40px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      width: 340px;
+      margin-right: 100px; } }
+
+.main__month {
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 50px; }
+  @media screen and (min-width: 800px) {
+    .main__month {
+      margin-right: 0px; } }
+  @media screen and (min-width: 1000px) {
+    .main__month {
+      margin-right: 0px; } }
+
+.main__year {
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 68px; }
+  @media screen and (min-width: 800px) {
+    .main__year {
+      margin-right: 40px; } }
+  @media screen and (min-width: 1000px) {
+    .main__year {
+      margin-right: 100px; } }

@@ -1,4 +1,7 @@
 @import 'scss/config.scss';
+html{
+    font-size: 21px;
+}
 
 .main{
     @media screen and (min-width: 800px) {
@@ -33,6 +36,9 @@
     &__greidsla, &__almennt{
         margin-top: $gutter;
         margin-bottom: $gutter;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
         @media screen and (min-width: 800px){
             margin-bottom: 0px;
             display: grid;
@@ -66,5 +72,49 @@
     }
     &__rc{
         margin-bottom: $gutter;
+        display: flex;
+        justify-content: space-between;
     }
+    &__input{
+        @include form($gutter*15);
+        @media screen and (min-width: 800px) {
+            @include form($gutter*11);
+            margin-right: $gutter*2;
+        }
+        @media screen and (min-width: 1000px) {
+            @include form($gutter*17);
+            margin-right: $gutter*5;
+        }
+    }
+    &__course{
+        @include form($gutter*15);
+        @media screen and (min-width: 800px) {
+            @include form($gutter*9);
+            margin-right: $gutter*2;
+        }
+        @media screen and (min-width: 1000px) {
+            @include form($gutter*17);
+            margin-right: $gutter*5;
+        }
+
+    }
+    &__month{
+        @include form($gutter*2.5);
+        @media screen and (min-width: 800px){
+            margin-right: $gutter*0;
+        }
+        @media screen and (min-width: 1000px) {
+            margin-right: $gutter*0;
+        }
+    }
+    &__year{
+        @include form($gutter*3.4);
+        @media screen and (min-width: 800px){
+            margin-right: $gutter*2;
+        }
+        @media screen and (min-width: 1000px) {
+            margin-right: $gutter*5;
+        }
+    }
+    
 }

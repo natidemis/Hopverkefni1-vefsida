@@ -24,3 +24,9 @@ $gutter: 20px;
       padding-top: $gutter*2;
     }
   }
+  @mixin form($padLeft) {
+    height: $gutter*2;
+        border: 1px solid $black;
+        border-radius: 5px;
+        width: $padLeft;
+  }
