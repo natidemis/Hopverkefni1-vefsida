@@ -17,7 +17,7 @@
                 <span><a href="../index.html"><p class="header__p--p">FORSÍÐA</p></a></span>
                 <span><a href="products.html"><p class="header__p--p">VÖRUR</p></a></span>
                 <span><a href="course.html"><p class="header__p--p"><u>NÁMSKEIÐ</u></p></a></span>
-                <span><a href="staff.html"><p class="header__p--p">STARFSFÓLK</p></a></span>
+                <span class="header__lastspan"><a href="staff.html"><p class="header__p--p header__ps">STARFSFÓLK</p></a></span>
                 </div>
            </div>
            <div class="header__cart">
@@ -40,16 +40,16 @@
           <div class="almennar-upplysingar">
             <h2>Almennar upplýsingar</h2>
             <form>
-              Nafn:
+              <label>Nafn:</label>
               <input type="text" name="name">
               <br>
-              Heimilisfang:
+              <label>Heimilisfang:</label>
               <input type="text" name="address">
               <br>
-              Aldur:
+              <label>Aldur:</label>
               <input type="text" name="age">
               <br>
-              Námskeið:
+              <label>Námskeið:</label>
               <select name="course">
                 <option value="V0 - V1">V0 - V1</option>
                 <option value="V2 - V4">V2 - V4</option>
@@ -62,14 +62,14 @@
           <div class="greidsla">
             <h2>Greiðsluupplýsingar</h2>
             <form>
-              Kortanúmer:
+              <label>Númer:</label>
               <input type="text" name="card-num">
               <br>
-              Korthafi:
+              <label>Korthafi:</label>
               <input type="text" name="cardholder">
               <br>
-              Gildistími:
-              Mán 
+              <label>Gildistími:</label>
+              <label>Mán</label> 
               <select name="month">
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -84,7 +84,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              Ár  
+              <label>Ár</label> 
               <select name="year">
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
@@ -93,8 +93,8 @@
               </select>
             </form>
           </div>
-          <button type="button" onclick="window.location.href = 'course.html'">Skrá</button>
         </div>
+        <div class="button"><button type="button" onclick="window.location.href = 'course.html'">Skrá</button></div>
       </div>
     </div>
     <footer>

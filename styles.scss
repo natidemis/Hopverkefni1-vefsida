@@ -60,6 +60,7 @@ header {
     }
     @media screen and (max-width: 699px) {
       @include headerP;
+      margin-bottom: -$gutter/2;
     }
     @media (min-width: 1000px) {
       @include headerP;
@@ -118,7 +119,7 @@ header {
           grid-column: none;
         }
       }
-      &__ps{
+      &__p--sf{
         @media screen and(min-width: 700px) {
           text-align: center;
           margin-top: 0px;
@@ -144,6 +145,56 @@ header {
       .cart__img{
         padding-bottom: $gutter/2;
       }
+  }
+
+  .forms {
+    //Þarf að vinna í þessu til að laga staðsetningu
+    display: flex;
+    margin-left: 25%;
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      padding-bottom: $gutter*0.5;
+    }
+    label {
+      margin-right: $gutter*2;
+    }
+    .almennar-upplysingar {
+      margin-right: $gutter*3;
+    }
+    .greidsla {
+      margin-left: $gutter*3;
+    }
+    form {
+      padding-top: $gutter*0.5;
+      padding-bottom: $gutter*0.5;
+      display: inline;
+    }
+    input {
+      border: 1px solid black;
+      border-radius: 3px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: $gutter*0.5;
+    }
+    select {
+      border: 1px solid black;
+      border-radius: 3px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: $gutter*0.5;
+    }
+  }
+  button {
+    @include headerA($black);
+    @include buttonA($blue);
+    margin-left: 25%;
+    border: none;
+    border-radius: 3px;
+    padding: $gutter*0.5 $gutter*3;
+    &:hover {
+      background-color: $redOrange;
+      color: $white;
+    }
   }
 
   //Fótur
