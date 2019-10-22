@@ -16,6 +16,14 @@ $gutter: 20px;
     transition-property: color;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
+    
+  }
+  @mixin buttonA($color){
+    background-color: $color;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
   }
   
   @mixin uppermain($order) {

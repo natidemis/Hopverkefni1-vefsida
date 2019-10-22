@@ -132,6 +132,54 @@ header {
   .header .cart__img {
     padding-bottom: 10px; }
 
+.forms {
+  display: flex;
+  margin-left: 25%; }
+  .forms h2 {
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px; }
+  .forms label {
+    margin-right: 40px; }
+  .forms .almennar-upplysingar {
+    margin-right: 60px; }
+  .forms .greidsla {
+    margin-left: 60px; }
+  .forms form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline; }
+  .forms input {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 10px; }
+  .forms select {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 10px; }
+
+button {
+  color: #000000;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  background-color: #00b7ff;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  margin-left: 25%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 60px; }
+  button:hover {
+    background-color: #ff5000;
+    color: #fffcf2; }
+
 footer {
   background-color: #00b7ff;
   width: 100vw;
