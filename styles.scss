@@ -185,7 +185,7 @@ header {
       margin-bottom: $gutter*0.5;
     }
   }
-  button {
+  .bluebutton {
     @include headerA($black);
     @include buttonA($blue);
     //margin-left: 25%;
