@@ -50,10 +50,14 @@ html{
         }
     }
     &--auh2{
+        font-family: 'Oswald', sans-serif;
         margin-bottom: $gutter/2;
         @media screen and (min-width: 800px){
             margin-bottom: $gutter;
         }
+    }
+    &--gru{
+        font-family: 'Oswald', sans-serif;
     }
     &__rc{
         margin-bottom: $gutter;
@@ -102,6 +106,9 @@ html{
         }
     }
 }
+label{
+    font-family: 'Oswald', sans-serif;
+}
 .bakpoki, .kalkpoki{
     @media screen and (min-width: 800px){
         padding-top: $gutter*2;
@@ -116,6 +123,9 @@ html{
             position: absolute;
             bottom: 0;
         }
+    }
+    &__price{
+        font-family: 'Oswald', sans-serif;
     }
 
 }
@@ -152,6 +162,12 @@ html{
         @include formCart($gutter*9);
         height: $gutter*2.5;
         
+    }
+}
+.greybtn{
+    @include buttonA($grey);
+    &:hover{
+        background-color: $blue;
     }
 }
 .img{

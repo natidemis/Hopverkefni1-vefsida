@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"test\"",
     "sass": "node-sass styles.scss --source-map-embed styles.css index.scss --source-map-embed index.css",
+    "cart": "node-sass cart.scss --source-map-embed cart.css",
     "browser-sync": "browser-sync start --server --files index.html styles.css pages/*.html",
     "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css node-sass --source-map-embed --watch index.scss --recursive index.css node-sass --source-map-embed scss/*.scss",
     "dev": "npm-run-all --parallel sass-watch browser-sync"
