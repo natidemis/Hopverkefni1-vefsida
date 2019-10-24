@@ -3,6 +3,7 @@ $black: #000000;
 $white: #fffcf2;
 $redOrange: #ff5000;
 $blue: #00b7ff;
+$grey: #dddddd;
 $grunnstaerd: 16px;
 $gutter: 20px;
 
@@ -36,5 +37,11 @@ $gutter: 20px;
     height: $gutter*2;
         border: 1px solid $black;
         border-radius: 5px;
+        width: $width;
+  }
+  @mixin formCart($width) {
+    height: $gutter*2;
+        border: 1px solid $black;
+        border-radius: 2px;
         width: $width;
   }

@@ -1,0 +1,204 @@
+@import'scss/config.scss';
+
+html{
+    font-size: 21px;
+}
+.product__img{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size: $grunnstaerd*2;
+    margin-bottom: $gutter;
+    @media screen and (min-width: 1000px){
+        font-size: $grunnstaerd*3;
+    }
+}
+.section1{
+    @media screen and (min-width: 800px){
+        display: grid;
+        grid-template-columns: 32% 68%;
+        grid-column-gap: $gutter;
+        grid-row-gap: $gutter;
+    }
+}
+.section2{
+    @media screen and (min-width: 800px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $gutter;
+        grid-row-gap: $gutter;
+    }
+}
+.form{
+    &__btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        @media screen and (min-width: 800px){
+            grid-column: 1/3;
+            justify-content: center;
+        }
+    }
+    &--guh2{
+        margin-bottom: $gutter/2;
+        @media screen and (min-width: 800px){
+            margin-bottom: $gutter;
+        }
+    }
+    &--auh2{
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: $gutter/2;
+        @media screen and (min-width: 800px){
+            margin-bottom: $gutter;
+        }
+    }
+    &--gru{
+        font-family: 'Oswald', sans-serif;
+    }
+    &__rc{
+        margin-bottom: $gutter;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input{
+        @include form($gutter*15);
+        @media screen and (min-width: 800px) {
+            @include form($gutter*10);
+            margin-right: $gutter*2;
+        }
+        @media screen and (min-width: 1000px) {
+            @include form($gutter*17);
+            margin-right: $gutter*5;
+        }
+    }
+    &__postal{
+        @include form($gutter*15);
+        @media screen and (min-width: 800px) {
+            @include form($gutter*12);
+            margin-right: $gutter*2;
+        }
+        @media screen and (min-width: 1000px) {
+            @include form($gutter*17);
+            margin-right: $gutter*5;
+        }
+
+    }
+    &__month{
+        @include form($gutter*2.5);
+        @media screen and (min-width: 800px){
+            margin-right: $gutter*0;
+        }
+        @media screen and (min-width: 1000px) {
+            margin-right: $gutter*0;
+        }
+    }
+    &__year{
+        @include form($gutter*3.4);
+        @media screen and (min-width: 800px){
+            margin-right: $gutter*2;
+        }
+        @media screen and (min-width: 1000px) {
+            margin-right: $gutter*5;
+        }
+    }
+}
+label{
+    font-family: 'Oswald', sans-serif;
+}
+.bakpoki, .kalkpoki{
+    @media screen and (min-width: 800px){
+        padding-top: $gutter*2;
+    }
+    @media screen and (min-width: 1000px){
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+    &__meta{
+        @media screen and (min-width: 1000px){
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &__price{
+        font-family: 'Oswald', sans-serif;
+    }
+
+}
+.info{
+    margin-bottom: $gutter;
+}
+.input{
+    @include formCart($gutter*5);
+    padding-left: $gutter/2;
+    padding-top: 6px;
+    @media screen and (min-width: 1000px){
+        @include formCart($gutter*5);
+        font-size: $grunnstaerd*1.2;
+        height: $gutter*2.5;
+        padding-top: 11px;
+        
+    }
+}
+.btn{
+    @include formCart($gutter*5);
+    font-size: $grunnstaerd;
+    margin-left: $gutter/2;
+    font-size: $grunnstaerd;
+    @media screen and (min-width: 1000px){
+        @include formCart($gutter*8);
+        font-size: $grunnstaerd*1.2;
+        height: $gutter*2.5;
+        
+    }
+}
+.del{
+    @include formCart($gutter*7);
+    @media screen and (min-width: 1000px){
+        @include formCart($gutter*9);
+        height: $gutter*2.5;
+        
+    }
+}
+.greybtn{
+    @include buttonA($grey);
+    &:hover{
+        background-color: $blue;
+    }
+}
+.img{
+    width: 20px;
+    height: 20px;
+    padding-top: 4px;
+    margin-right: 4px;
+    @media screen and (min-width: 1000px){
+        width: 30px;
+        height: 30px;
+        padding-top: 6px;
+    }
+}
+.greidsla, .send{
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    @media screen and (min-width: 800px){
+        margin-bottom: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+.kaupa{
+    margin-bottom: $gutter*2;
+    width: $gutter*15;
+    font-size: $grunnstaerd*1.5;
+    @media screen and (min-width: 800px) {
+        margin-top: $gutter;
+    }
+}
+
