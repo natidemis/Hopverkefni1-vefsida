@@ -256,11 +256,15 @@ header {
       padding-bottom: $gutter;
       
       a{
+        font-family: 'Oswald', sans-serif;
         @include headerA($white);
         &:hover{
           color: $black;
         }
       }
+    }
+    h4{
+      font-family: 'Oswald', sans-serif;
     }
     
   }
@@ -280,7 +284,6 @@ header {
   font-size: 21px;
 }
 
-/*                    FLIP BOX FYRIR STARFSMENN
 
 .flip-box {
   background-color: transparent;
@@ -317,12 +320,13 @@ header {
 
 .flip-box-back {
   background-color: white;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
-*/
-
-
+h5{
+  font-size: 21px;
+  font-family: 'Open sans', sans-serif;
+}
 // TODO sækja allar sass skrár
 // @import "scss/...";
