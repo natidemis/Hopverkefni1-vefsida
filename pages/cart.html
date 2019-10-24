@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../cart.css">
   </head>
   <body>
 
@@ -18,7 +19,7 @@
               <span><a href="../index.html"><p class="header__p--p">FORSÍÐA</p></a></span>
               <span><a href="products.html"><p class="header__p--p">VÖRUR</p></a></span>
               <span><a href="course.html"><p class="header__p--p">NÁMSKEIÐ</p></a></span>
-              <span class="header__lastspan"><a href="staff.html"><p class="header__p--p header__ps">STARFSFÓLK</p></a></span>
+              <span class="header__lastspan"><a href="staff.html"><p class="header__p--p header__p--sf">STARFSFÓLK</p></a></span>
               </div>
          </div>
          <div class="header__cart">
@@ -31,51 +32,54 @@
   <main class="container">
     <div class="main">
       <h2 class="cart__title title"> Vörur í körfu </h2>
+      <div class="section1">
       <div class="main__image">
             <img  src="../img/Backpack.jpg" class="product__img" >
         </div >
-      <div class="bakpoki">
-            <div class="bakpoki__text">
-                <h2 class="bakpoki__title title">Bakpoki</h2>
-                <p class="bakpoki__info">Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
-            </div>
-            <div class="bakpoki__meta">
-                    <h2 class="product__price">49.900 kr.-</h2>
-                    <label class="product__label">
-                     Fjöldi:</label>
-                     <input class="product__input" type="number" value="2">
-                    <button class="product__button">Uppfæra</button>
-                    <button class="product__button product__button--delete">Eyða úr körfu </button>
-            </div>
+        <div class="bakpoki">
+              <div class="bakpoki__text">
+                  <h2 class="bakpoki__title title">Bakpoki</h2>
+                  <p class="bakpoki__info info">Þú getur geymt allt sem þú þarft fyrir klifrið í þessum bakpoka.</p>
+              </div>
+              <div class="bakpoki__meta">
+                      <h2 class="bakpoki__price">49.900 kr.-</h2>
+                      <label class="bakpoki__label label">
+                       Fjöldi:<br></label>
+                       <input class="bakpoki__input input" type="number" value="2">
+                      <button class="bakpoki__button btn"><img src="../img/cart.svg" class="img">Uppfæra</button>
+                      <button class="bakpoki__button btn del"><img src="../img/cart.svg" class="img">Eyða úr körfu </button>
+              </div>
+          </div>
+          <div class="main__image2">
+              <img  src="../img/chalkbag.jpg" class="product__img">
+          </div >
+        <div class="kalkpoki">
+              <div class="kalkpoki__text">
+                      <h2 class="kalkpoki__title title">Kalkpoki</h2>
+                      <p class="kalkpoki__info info">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
+                      <div class="kalkpoki__price price">4.900 kr.-</div>
+                    </div>
+               <div class="kalkpoki__meta">
+                  <label class="kalkpoki__label  label">
+                   Fjöldi:<br></label>
+                   <input class="kalkpoki__input input" type="number" value="2" >
+                  <button class="kalkpoki__button btn greybtn"><img src="../img/cart.svg" class="img">Uppfæra</button>
+                  <button class="kalkpoki__button btn del greybtn"><img src="../img/cart.svg" class="img">Eyða úr körfu </button>
+              </div>
         </div>
-        <div class="main__image2">
-            <img  src="../img/chalkbag.jpg" class="product__img">
-        </div >
-      <div class="kalkpoki">
-            <div class="product__text">
-                    <h2 class="product__title title">Kalkpoki</h2>
-                    <p class="product__info">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
-                    <div class="product__price">4.900 kr.-</div>
-                  </div>
-             <div class="product__meta">
-                <label class="product__label">
-                 Fjöldi:</label>
-                 <input class="product__input" type="number" value=2 >
-                <button class="product__button">Uppfæra</button>
-                <button class="product__button product__button--delete">Eyða úr körfu </button>
-            </div>
-      </div>
-      <div class="main__sendaupl">
-            <h2 class="main--auh2">Sendingarupplýsingar</h2>
+    </div>
+    <div class="section2">
+      <div class="send">
+            <h2 class="form--auh2">Sendingarupplýsingar</h2>
             <form>
-              <div class="main__rc"> <label for="name">Nafn:</label>
-              <input type="text" name="name" class="main__input">
+              <div class="form__rc"> <label for="name">Nafn:</label>
+              <input type="text" name="name" class="form__input">
               </div>
-              <div class="main__rc"> <label for="address">Heimilisfang:</label>
-              <input type="text" name="address" class="main__input">
+              <div class="form__rc"> <label for="address">Heimilisfang:</label>
+              <input type="text" name="address" class="form__input">
               </div>
-              <div class="main__rc"><label for="postal">Póstnúmer</label>
-              <select name="postal" class="main__course">
+              <div class="form__rc"><label for="postal">Póstnúmer</label>
+              <select name="postal" class="form__postal">
                     <option> -Velja póstnúmer- </option>
                     <option> 101 Reykjavík </option>
                     <option> 103 Reykjavík </option>
@@ -262,19 +266,19 @@
             </div>
         </form>       
       </div>
-      <div class="main__greidsla">
+      <div class="greidsla">
             <div class="main__greidsla">
-                <div><h2 class="main--guh2">Greiðsluupplýsingar</h2></div>
+                <div><h2 class="form--gru">Greiðsluupplýsingar</h2></div>
                   <form>
-                    <div class="main__rc"><label for="card-num">Kortanúmer:</label>
-                    <input type="text" name="card-num" class="main__input">
+                    <div class="form__rc"><label for="card-num">Kortanúmer:</label>
+                    <input type="text" name="card-num" class="form__input">
                     </div>
-                   <div class="main__rc"> <label for="cardholder">Korthafi:</label>
-                    <input type="text" name="cardholder" class="main__input">
+                   <div class="form__rc"> <label for="cardholder">Korthafi:</label>
+                    <input type="text" name="cardholder" class="form__input">
                     </div>
-                    <div class="main__rc">Gildistími:
+                    <div class="form__rc">Gildistími:
                     <label for="month">Mán</label> 
-                    <select name="month" class="main__month">
+                    <select name="month" class="form__month">
                       <option value="01">01</option>
                       <option value="02">02</option>
                       <option value="03">03</option>
@@ -289,7 +293,7 @@
                       <option value="12">12</option>
                     </select>
                     <label for="year">Ár</label>  
-                    <select name="year" class="main__year">
+                    <select name="year" class="form__year">
                       <option value="2019">2019</option>
                       <option value="2020">2020</option>
                       <option value="2021">2021</option>
@@ -297,8 +301,9 @@
                     </select></div>
                   </form>
                 </div>
+              </div>
+              <div class="form__btn"><button class="bluebutton kaupa">Kaupa</button></div>
       </div>
-      <button class="button">Kaupa</button>
     </div> 
   </main>
   

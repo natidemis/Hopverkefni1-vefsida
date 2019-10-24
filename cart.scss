@@ -27,6 +27,7 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: $gutter;
         grid-row-gap: $gutter;
+        justify-content: center;
     }
 }
 .form{
@@ -34,13 +35,11 @@
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-    &__btn{
         @media screen and (min-width: 800px){
             grid-column: 1/3;
-            justify-content: center;
         }
     }
+    
     &--guh2{
         margin-bottom: $gutter/2;
         @media screen and (min-width: 800px){
@@ -193,7 +192,7 @@ label{
 }
 .kaupa{
     margin-bottom: $gutter*2;
-    width: $gutter*15;
+    width: $gutter*10;
     font-size: $grunnstaerd*1.5;
     @media screen and (min-width: 800px) {
         margin-top: $gutter;
