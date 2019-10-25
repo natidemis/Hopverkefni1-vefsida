@@ -1,6 +1,18 @@
 @import "scss/config.scss";
 
 // fyrir hverja vöru
+.main{
+  margin-top: $gutter*2;
+  margin-bottom: $gutter*3;
+  grid-column-gap: $gutter;
+  @media screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__section{
+    margin-bottom: $gutter*2;
+  }
+}
 .product {
     display: flex;
     height: 100%;
@@ -8,6 +20,9 @@
  
     &__mynd {
       margin-bottom: $gutter;
+    }
+    &__img{
+      width: 100%;
     }
  
     &__efni {
