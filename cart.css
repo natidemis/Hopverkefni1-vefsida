@@ -193,15 +193,6 @@ label {
       width: 180px;
       height: 50px; } }
 
-.greybtn {
-  background-color: #dddddd;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out; }
-  .greybtn:hover {
-    background-color: #00b7ff; }
-
 .img {
   width: 20px;
   height: 20px;

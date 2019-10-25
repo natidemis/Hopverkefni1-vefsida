@@ -198,6 +198,14 @@ header {
     }
   }
 
+  .greybtn{
+    @include buttonA($grey);
+    transition: 0.3s;
+    &:hover{
+        background-color: $blue;
+    }
+}
+
   //Fótur
   footer{
     background-color: $blue;

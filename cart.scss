@@ -165,12 +165,7 @@ label{
         
     }
 }
-.greybtn{
-    @include buttonA($grey);
-    &:hover{
-        background-color: $blue;
-    }
-}
+
 .img{
     width: 20px;
     height: 20px;
