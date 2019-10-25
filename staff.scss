@@ -64,17 +64,17 @@
     transition-duration: 200ms;
   }
   
-  .flip-box__front__img {
+  .flip-box__front--img {
     width: 100%;
     height: 100%;
   }
   
-  .flip-box__back__h5 {
+  .flip-box__back--h5 {
     font-size: 24px;
     padding-bottom: $gutter*0.5;
     font-family: 'Open sans', sans-serif;
   }
   
-  .flip-box__back__p {
+  .flip-box__back--p {
     font-size: 18px;
   }
