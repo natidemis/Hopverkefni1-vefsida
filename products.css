@@ -1,0 +1,66 @@
+.product {
+  display: flex;
+  height: 100%;
+  flex-direction: column; }
+  .product__mynd {
+    margin-bottom: 20px; }
+  .product__efni {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .product__texti {
+    display: flex;
+    height: 100%;
+    flex-direction: column; }
+  .product__titill {
+    margin-bottom: 10px;
+    font-family: "Oswald", Verdana, serif;
+    font-size: 2.25rem;
+    font-weight: 600; }
+  .product__lysing {
+    flex: 1;
+    margin-bottom: 10px; }
+  .product__price {
+    margin-bottom: 20px;
+    font-family: "Oswald", Verdana, serif;
+    font-size: 1.5rem;
+    font-weight: 600; }
+  .product__meta {
+    display: flex;
+    align-items: flex-end; }
+  .product__label {
+    margin-right: 10px;
+    flex: 1; }
+  .product__input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 3px; }
+  .product__button {
+    padding: 10px;
+    padding-left: 40px;
+    margin-right: 10px;
+    font-size: 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    background-image: url("img/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    background-size: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    /*transition:
+        background-color $transition,
+        border-color $transition;
+ 
+      &:hover {
+        background-color: $color-4;
+        border-color: $color-4;
+      }*/ }
+    .product__button:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAicHJvZHVjdHMuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSJwcm9kdWN0cy5zY3NzIiwKCQkic2Nzcy9jb25maWcuc2NzcyIKCV0sCgkibmFtZXMiOiBbXSwKCSJtYXBwaW5ncyI6ICJBQUlBLEFBQUEsUUFBUSxDQUFDO0VBQ0wsT0FBTyxFQUFFLElBQUk7RUFDYixNQUFNLEVBQUUsSUFBSTtFQUNaLGNBQWMsRUFBRSxNQUFNLEdBd0Z2QjtFQXRGRSxBQUFELGNBQU8sQ0FBQztJQUNOLGFBQWEsRUNKVixJQUFJLEdES1I7RUFFQSxBQUFELGNBQU8sQ0FBQztJQUNOLElBQUksRUFBRSxDQUFDO0lBQ1AsT0FBTyxFQUFFLElBQUk7SUFDYixjQUFjLEVBQUUsTUFBTTtJQUN0QixlQUFlLEVBQUUsYUFBYSxHQUMvQjtFQUVBLEFBQUQsZUFBUSxDQUFDO0lBQ1AsT0FBTyxFQUFFLElBQUk7SUFDYixNQUFNLEVBQUUsSUFBSTtJQUNaLGNBQWMsRUFBRSxNQUFNLEdBQ3ZCO0VBRUEsQUFBRCxnQkFBUyxDQUFDO0lBQ1IsYUFBYSxFQUFFLElBQWE7SUFDNUIsV0FBVyxFQ2pCRixRQUFRLEVBQUUsT0FBTyxFQUFFLEtBQUs7SURrQmpDLFNBQVMsRUFBRSxPQUFPO0lBQ2xCLFdBQVcsRUFBRSxHQUFHLEdBQ2pCO0VBR0EsQUFBRCxnQkFBUyxDQUFDO0lBQ1IsSUFBSSxFQUFFLENBQUM7SUFDUCxhQUFhLEVBQUUsSUFBYSxHQUM3QjtFQUVBLEFBQUQsZUFBUSxDQUFDO0lBQ1AsYUFBYSxFQ2xDVixJQUFJO0lEbUNQLFdBQVcsRUM5QkYsUUFBUSxFQUFFLE9BQU8sRUFBRSxLQUFLO0lEK0JqQyxTQUFTLEVBQUUsTUFBTTtJQUNqQixXQUFXLEVBQUUsR0FBRyxHQUNqQjtFQUVBLEFBQUQsY0FBTyxDQUFDO0lBQ04sT0FBTyxFQUFFLElBQUk7SUFDYixXQUFXLEVBQUUsUUFBUSxHQUN0QjtFQUVBLEFBQUQsZUFBUSxDQUFDO0lBQ1AsWUFBWSxFQUFFLElBQWE7SUFDM0IsSUFBSSxFQUFFLENBQUMsR0FDUjtFQUVBLEFBQUQsZUFBUSxDQUFDO0lBQ1AsS0FBSyxFQUFFLElBQUk7SUFDWCxPQUFPLEVBQUUsSUFBSTtJQUNiLFlBQVksRUFBRSxJQUFhO0lBQzNCLFNBQVMsRUFBRSxJQUFJO0lBQ2YsTUFBTSxFQUFFLGNBQWM7SUFDdEIsYUFBYSxFQUFFLEdBQUcsR0FDbkI7RUFFQSxBQUFELGdCQUFTLENBQUM7SUFDUixPQUFPLEVBQUUsSUFBSTtJQUNiLFlBQVksRUFBRSxJQUFJO0lBQ2xCLFlBQVksRUFBRSxJQUFJO0lBRWxCLFNBQVMsRUFBRSxJQUFJO0lBQ2YsV0FBVyxFQUFFLE1BQU07SUFDbkIsTUFBTSxFQUFFLE9BQU87SUFFZixnQkFBZ0IsRUFBRSxtQkFBbUI7SUFDckMsaUJBQWlCLEVBQUUsU0FBUztJQUM1QixtQkFBbUIsRUFBRSxRQUFRO0lBQzdCLGVBQWUsRUFBRSxJQUFJO0lBRXJCLE1BQU0sRUFBRSxjQUFjO0lBQ3RCLGFBQWEsRUFBRSxHQUFHO0lBRWxCOzs7Ozs7O1NBT0csRUFLSjtJQTdCQSxBQTBCQyxnQkExQk8sQUEwQk4sV0FBVyxDQUFDO01BQ1gsWUFBWSxFQUFFLENBQUMsR0FDaEIiCn0= */

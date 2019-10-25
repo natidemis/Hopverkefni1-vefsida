@@ -1,6 +1,10 @@
 @import "scss/config.scss";
 
 .main{
+    display: grid;
+    @media screen and (min-width: 1500px) {
+        margin-left: 10.5%;        
+    }
     padding: 0px;
     margin-bottom: $gutter*2;
     @media screen and (min-width: 800px) {
@@ -12,7 +16,7 @@
 
 .flip-box {
     background-color: transparent;
-    // position: relative;
+    display: grid;
     width: 100%;
     height: 100%;
     border: none;
