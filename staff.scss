@@ -2,9 +2,7 @@
 
 .main{
     display: grid;
-    @media screen and (min-width: 1500px) {
-        margin-left: 10.5%;        
-    }
+    
     padding: 0px;
     margin-bottom: $gutter*2;
     @media screen and (min-width: 800px) {
@@ -38,6 +36,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    margin-top: $gutter;
   }
   
   .flip-box:hover .flip-box-inner {
