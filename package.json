@@ -9,7 +9,7 @@
     "cart": "node-sass cart.scss --source-map-embed cart.css",
     "staff": "node-sass staff.scss --source-map-embed staff.css",
     "browser-sync": "browser-sync start --server --files index.html styles.css pages/*.html",
-    "sass-watch": "node-sass --source-map-embed --watch styles.scss --recursive styles.css node-sass --source-map-embed --watch index.scss --recursive index.css node-sass --source-map-embed scss/*.scss",
+    "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
     "dev": "npm-run-all --parallel sass-watch browser-sync"
   },
   "repository": {

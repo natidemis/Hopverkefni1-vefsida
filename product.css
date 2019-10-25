@@ -1,0 +1,27 @@
+.products {
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media (max-width: 1199px) {
+    .products {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  .products__lina {
+    display: flex;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; }
+  .products__rammi {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px; }
+    @media (max-width: 500px) {
+      .products__rammi {
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 10px; } }
+    @media (min-width: 800px) {
+      .products__rammi {
+        width: 33.33333%;
+        padding-right: 10px;
+        padding-left: 10px; } }
