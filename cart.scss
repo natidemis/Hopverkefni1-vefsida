@@ -13,7 +13,7 @@
         font-size: $grunnstaerd*3;
     }
 }
-.section1{
+.main__section1{
     @media screen and (min-width: 800px){
         display: grid;
         grid-template-columns: 32% 68%;
@@ -21,7 +21,7 @@
         grid-row-gap: $gutter;
     }
 }
-.section2{
+.main__section2{
     @media screen and (min-width: 800px){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -55,6 +55,7 @@
     }
     &--gru{
         font-family: 'Oswald', sans-serif;
+        margin-bottom: $gutter;
     }
     &__rc{
         margin-bottom: $gutter;
@@ -73,6 +74,7 @@
         }
     }
     &__postal{
+        background-color: transparent;
         @include form($gutter*15);
         @media screen and (min-width: 800px) {
             @include form($gutter*12);
@@ -85,6 +87,7 @@
 
     }
     &__month{
+        background-color: transparent;
         @include form($gutter*2.5);
         @media screen and (min-width: 800px){
             margin-right: $gutter*0;
@@ -94,6 +97,7 @@
         }
     }
     &__year{
+        background-color: transparent;
         @include form($gutter*3.4);
         @media screen and (min-width: 800px){
             margin-right: $gutter*2;
@@ -104,7 +108,7 @@
     }
 }
 label{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open sans', sans-serif;
 }
 .bakpoki, .kalkpoki{
     @media screen and (min-width: 800px){
@@ -196,6 +200,10 @@ label{
     font-size: $grunnstaerd*1.5;
     @media screen and (min-width: 800px) {
         margin-top: $gutter;
+        width: $gutter*13;
+    }
+    @media screen and (min-width: 1500px){
+        width: $gutter*20;
     }
 }
 

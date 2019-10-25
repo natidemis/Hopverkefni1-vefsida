@@ -11,14 +11,14 @@
       font-size: 48px; } }
 
 @media screen and (min-width: 800px) {
-  .section1 {
+  .main__section1 {
     display: grid;
     grid-template-columns: 32% 68%;
     grid-column-gap: 20px;
     grid-row-gap: 20px; } }
 
 @media screen and (min-width: 800px) {
-  .section2 {
+  .main__section2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
@@ -47,7 +47,8 @@
       margin-bottom: 20px; } }
 
 .form--gru {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px; }
 
 .form__rc {
   margin-bottom: 20px;
@@ -75,6 +76,7 @@
       margin-right: 100px; } }
 
 .form__postal {
+  background-color: transparent;
   height: 40px;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -95,6 +97,7 @@
       margin-right: 100px; } }
 
 .form__month {
+  background-color: transparent;
   height: 40px;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -107,6 +110,7 @@
       margin-right: 0px; } }
 
 .form__year {
+  background-color: transparent;
   height: 40px;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -119,7 +123,7 @@
       margin-right: 100px; } }
 
 label {
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Open sans', sans-serif; }
 
 @media screen and (min-width: 800px) {
   .bakpoki, .kalkpoki {
@@ -227,4 +231,8 @@ label {
   font-size: 24px; }
   @media screen and (min-width: 800px) {
     .kaupa {
-      margin-top: 20px; } }
+      margin-top: 20px;
+      width: 260px; } }
+  @media screen and (min-width: 1500px) {
+    .kaupa {
+      width: 400px; } }

@@ -85,6 +85,7 @@
         }
     }
     &__course{
+        background-color: transparent;
         @include form($gutter*15);
         @media screen and (min-width: 800px) {
             @include form($gutter*9);
@@ -97,6 +98,7 @@
 
     }
     &__month{
+        background-color: transparent;
         @include form($gutter*2.5);
         @media screen and (min-width: 800px){
             margin-right: $gutter*0;
@@ -106,6 +108,7 @@
         }
     }
     &__year{
+        background-color: transparent;
         @include form($gutter*3.4);
         @media screen and (min-width: 800px){
             margin-right: $gutter*2;
@@ -113,6 +116,9 @@
         @media screen and (min-width: 1000px) {
             margin-right: $gutter*5;
         }
+    }
+    &__skra{
+        width: $gutter*12;
     }
     
 }

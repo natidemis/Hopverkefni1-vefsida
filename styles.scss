@@ -256,7 +256,7 @@ header {
       padding-bottom: $gutter;
       
       a{
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Open sans', sans-serif;
         @include headerA($white);
         &:hover{
           color: $black;
@@ -264,8 +264,13 @@ header {
       }
     }
     h4{
-      font-family: 'Oswald', sans-serif;
-    }
+      font-family: 'Open sans', sans-serif;
+      font-size: $grunnstaerd*1.5;
+      margin-bottom: $gutter/2;
+     }
+     span{
+       margin-bottom: $gutter/2;
+     }
     
   }
 
